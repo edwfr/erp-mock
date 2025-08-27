@@ -8,7 +8,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 # Copia il codice
 COPY . .
-# Esponi la porta Flask (5001)
+# Esponi la porta Flask (5002)
 EXPOSE 5002
 # Comando di avvio
 CMD ["python", "mock_erp.py"]
