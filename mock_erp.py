@@ -292,7 +292,7 @@ def validate_transaction():
     return jsonify(validation_result)
 
 if __name__ == '__main__':
-    print("Starting ERP System on port 5002...")
+    print("Starting ERP System on port 80...")
     print("Available endpoints:")
     print("- GET /api/health - Health check")
     print("- GET /api/invoices - Get all invoices (supports ?status= and ?customer_account= filters)")
@@ -304,4 +304,4 @@ if __name__ == '__main__':
     print("- GET /api/cash-flow/analysis - Get cash flow analysis")
     print("- GET /api/payments - Get all payments (supports ?invoice_id= filter)")
     print("- POST /api/financial/validate-transaction - Validate transaction against invoices")
-    app.run(host="0.0.0.0", port=5002, debug=True)
+    app.run(host="0.0.0.0", port=80, debug=True)
